@@ -493,16 +493,16 @@ Let everyone know about a team change
 void BroadcastTeamChange( gclient_t *client, int oldTeam )
 {
 	if ( client->sess.sessionTeam == TEAM_RED ) {
-		trap_SendServerCommand( -1, va("cp \"%s" S_COLOR_WHITE " joined the red team.\n\"",
+		trap_SendServerCommand( -1, va("cp \"%s" S_COLOR_WHITE " ühines punase tiimiga.\n\"",
 			client->pers.netname) );
 	} else if ( client->sess.sessionTeam == TEAM_BLUE ) {
-		trap_SendServerCommand( -1, va("cp \"%s" S_COLOR_WHITE " joined the blue team.\n\"",
+		trap_SendServerCommand( -1, va("cp \"%s" S_COLOR_WHITE " ühines sinise tiimiga.\n\"",
 		client->pers.netname));
 	} else if ( client->sess.sessionTeam == TEAM_SPECTATOR && oldTeam != TEAM_SPECTATOR ) {
-		trap_SendServerCommand( -1, va("cp \"%s" S_COLOR_WHITE " joined the spectators.\n\"",
+		trap_SendServerCommand( -1, va("cp \"%s" S_COLOR_WHITE " ühines pealtvaatajatega.\n\"",
 		client->pers.netname));
 	} else if ( client->sess.sessionTeam == TEAM_FREE ) {
-		trap_SendServerCommand( -1, va("cp \"%s" S_COLOR_WHITE " joined the battle.\n\"",
+		trap_SendServerCommand( -1, va("cp \"%s" S_COLOR_WHITE " ühines lahinguga.\n\"",
 		client->pers.netname));
 	}
 }

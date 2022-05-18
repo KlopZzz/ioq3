@@ -44,11 +44,11 @@ static const char *MonthAbbrev[] = {
 
 
 static const char *skillLevels[] = {
-  "I Can Win",
-  "Bring It On",
-  "Hurt Me Plenty",
+  "Ma võidan",
+  "Davai, lähme",
+  "Anna tappa",
   "Hardcore",
-  "Nightmare"
+  "Õdusunenägu"
 };
 
 static const int numSkillLevels = ARRAY_LEN( skillLevels );

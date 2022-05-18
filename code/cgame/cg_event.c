@@ -215,11 +215,11 @@ static void CG_Obituary( entityState_t *ent ) {
 		char	*s;
 
 		if ( cgs.gametype < GT_TEAM ) {
-			s = va("You fragged %s\n%s place with %i", targetName, 
+			s = va("Sa fraggisid %s\n%s place with %i", targetName, 
 				CG_PlaceString( cg.snap->ps.persistant[PERS_RANK] + 1 ),
 				cg.snap->ps.persistant[PERS_SCORE] );
 		} else {
-			s = va("You fragged %s", targetName );
+			s = va("Sa fraggisid %s", targetName );
 		}
 #ifdef MISSIONPACK
 		if (!(cg_singlePlayerActive.integer && cg_cameraOrbit.integer)) {
